@@ -1,7 +1,7 @@
 import cv2
 
 # Abre o arquivo de video
-video_capture = cv2.VideoCapture('../assets/arsene.mp4')
+video_capture = cv2.VideoCapture('arsene.mp4')
 
 # Checa se foi possivel abrir o arquivo
 if not video_capture.isOpened():
