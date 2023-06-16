@@ -1,17 +1,10 @@
-# Parte prática da prova 2 do módulo 6 de Engenharia de Computação
+# Parte prática da prova 2 
 
-## Enunciado
+## Explicação
 
-Desenvolva um código em Python capaz de utilizar o openCV para a leitura de um vídeo (frame a frame) e, para cada frame, o seu código deve identificar e marcar na imagem os retângulos correspondentes a cada uma das faces encontradas. Ao final do código, um novo vídeo deve ser salvo com a(s) face(s) identificada(s).
+Para o desenvolvimento do código e identificação dos rostos foi feito o arquivo 'main.py' que está dentro da pasta atividade. O método utilizado foi o haar cascade. Primeiramente, foi utilizei um filtro em cada frame para deixá-lo cinza e depois utilizei o próprio haar cascade para detectar as faces.
+Depois que a detecção foi feita, utilizamos os pontos da primeira face encontrada 'faces[0]' que foram salvos em x,y,w,h, utilizamos o '.rectangle' do cv2 para fazer o desenho dos retângulos nos frames utilizando os pontos encontrados anteriormente.
 
-Para a detecção das faces, pode-se utilizar a abordagem que quiser (haar cascade, filtro de correlação, YOLO). Não há a necessidade de fazer o fine tuning da detecção. Se o código é capaz de identificar faces corretamente na maior parte do tempo, considera-se como uma aplicação aceitável para esta etapa da prova.
+Por fim salvamos o resultado no output_video, o vídeo para demonstração está salvo em atividade > saida > out.avi 
 
-Boa prova =)
-
-## Exemplos
-
-Este repositório conta com dois exemplos, ambos na pasta de exemplos:
-
-1. `reproduz_video.py` -> exemplo de leitura e reprodução de vídeo utilizando o opencv; e
-2. `edita_video.py` -> exemplo onde é possível ver como se abre um vídeo com o opencv e edita-o frame a frame, salvando um único arquivo de vídeo ao final.
-
+Por hoje é só professor :)
